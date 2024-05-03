@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q==3</title>
+</head>
+<body>
+    <script>
+        class MultiplicationTable {
+  constructor(number) {
+    this.number = number;
+  }
+
+  printTable() {
+    let multiplier = 1;
+    do {
+        document.write( "<br>" + `${this.number} * ${multiplier} = ${this.number * multiplier}` + "<br>");
+      multiplier++;
+    } while (multiplier <= 10);
+  }
+}
+
+
+const number = parseInt(prompt("Enter The Number : "));
+const table = new MultiplicationTable(number);
+document.write(`Multiplication Table Of ${number}:`);
+table.printTable();
+    </script>
+</body>
+</html>
